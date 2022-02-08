@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-Wawe</title>
+    <link rel="icon" type="image/swg" href="img/logofaw.svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav-up">
+          <div class="container header__container">
+            <div class="header__nav-block">
+        <a href="#" class="header__logo-link" aria-label="Логотип">
+         <img src="img/logo.png" alt="Логотип" class="header__logo-bic">
+        </a>
+        <nav class="header__nav flex">
+            <ul class="header__list list flex">
+                <li class="header__list-item"><a href="#" class="header__nav-link link" aria-label="Подкасты">Подкасты</a></li>
+                <li class="header__list-item"><a href="#" class="header__nav-link link" aria-label="Передачи">Передачи</a></li>
+                <li class="header__list-item"><a href="#" class="header__nav-link link" aria-label="Гости">Гости</a></li>
+                <li class="header__list-item"><a href="#" class="header__nav-link link" aria-label="Плейлисты">Плейлисты</a></li>
+                <li class="header__list-item"><a href="#" class="header__nav-link link" aria-label="О нас">О нас</a></li>
+            </ul>
+            <form action="#" class="header__form" method="POST">
+              <label class="header__form-label">
+                <input type="text" class="header__form-input" placeholder="Поиск по сайту">
+              </label>
+            </form>
+            <button class="header__search btn" type="submit" value="search" aria-label="Найти">
+                <svg class="header__search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="header__svg-pic" d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="header__svg-pic" d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
+            <button class="header__entrance btn" aria-label="Вход">
+              <a href="#" class="header__entrance-link link">Вход</a>
+            </button>
+        </nav>
+       </div>
+      </div>
+    </div>
+    <div class="header__nav-bottom">
+        <div class="container header__container">
+        <div class="header__second-nav">
+            <ul class="header__second-list list">
+                <li class="header__second-list-item"><a href="#" class="header__second-link link" aria-label="Новости">Новости</a></li>
+                <li class="header__second-list-item"><a href="#" class="header__second-link link" aria-label="Блоги">Блоги</a></li>
+                <li class="header__second-list-item"><a href="#" class="header__second-link link" aria-label="Топы">Топы</a></li>
+                <li class="header__second-list-item"><a href="#" class="header__second-link link" aria-label="Опросы">Опросы</a></li>
+                <li class="header__second-list-item"><a href="#" class="header__second-link link" aria-label="Рейтинги">Рейтинги</a></li>
+                <li class="header__second-list-item"><a href="#" class="header__second-link link" aria-label="Реклама">Реклама</a></li>
+            </ul>
+            <div class="header__sound-after flex">
+              <span class="header__span-after">Ранее в эфире</span>
+                <h3 class="header__heading-music-after"><q>Музыка</q></h3>
+                  <button class="header__music-btn-after btn" aria-label="Музыка ранее">
+                    <svg class="header__music-svg-a" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                        </svg>
+                    </button> 
+            </div> 
+            <div class="header__sound-before flex">
+              <span class="header__span-before">Сейчас в эфире</span>
+                <h3 class="header__heading-music-before"><q>Как так?</q></h3>
+                  <button class="header__music-btn-before btn" aria-label="Сейчас в эфире">
+                    <svg class="header__music-svg-b" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                         </svg>
+                     </button>
+            </div>
+            <div class="header__age" aria-label="Ограничения 12+">
+              <img src="img/age.png" alt="" class="header__age-pic">
+            </div>  
+        </div>
+      </div>
+    </div>
+    </header>
+    <script src="js/index.js"></script>
+</body>
+</html>
