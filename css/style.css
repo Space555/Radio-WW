@@ -424,6 +424,24 @@ body {
     font-size: 20px;
     line-height: 100%;
     color: var(--color-basic);
+    transition: background-color .5s ease-in-out;
+}
+
+.hero__link:hover {
+    border: 1px solid var(--color-focus);
+    background-color: var(--color-focus);
+}
+
+.hero__link:focus {
+    outline:none;
+    border: 2px solid var(--color-active);
+    background-color: var(--color-focus);
+}
+
+.hero__link:active{
+    outline: none;
+    border: 1px solid var(--color-active);
+    background-color: var(--color-active);
 }
 
 /*Podcast*/
@@ -539,7 +557,29 @@ body {
     font-size: 20px;
     line-height: 100%;
     color: var(--background-btn);
+    transition: all .5s ease-in-out;
 }
+
+.podcast__link-more:hover {
+    background-color: var(--background-btn);
+    color: var(--color-basic);
+}
+
+.podcast__link-more:focus {
+    outline: none;
+    border: 2px solid var(--background-btn);
+    background-color: var(--color-focus);
+    color: var(--color-basic);
+}
+
+.podcast__link-more:active {
+    outline: none;
+    border: none;
+    background-color: var(--color-active);
+    color: var(--color-basic);
+    transform: translateY(3px);
+}
+
 
 
 
