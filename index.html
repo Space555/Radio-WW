@@ -99,7 +99,7 @@
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__block">
-            <h2 class="hero__heading">Радио <span class="hero__span"><i>W-Wawe</i></span></h2>
+            <h2 class="hero__heading">Радио <span class="hero__span">W-Wawe</span></h2>
             <p class="hero__deskr">
               Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были <a href="#" class="hero__link-descr link">изданием</a> ,
                а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. 
@@ -451,23 +451,96 @@
 
       <section class="programs">
         <div class="container programs-container">
-          <div class="programs__blocks">
+          <div class="programs__blocks flex">
+            <div class="programs__two-blocks flex">
           <div class="programs__right-block">
             <h2 class="programs__heading heading">Передачи</h2>
-           <div class="programs__select-block">
-              <p class="programs__label">Автор :</p>
+           <div class="programs__select-block flex">
+              <p class="programs__author">Автор :</p>
                 <select name="select" id="newSelect" class="programs__select">
-                  <option class="programs__option" value="Дмитрий Гутенбкрг"></option>
+                  <option class="programs__option" value="Дмитрий Гутенберг"></option>
                   <option class="programs__option">Татьяна Флеганова</option>
                   <option class="programs__option">Анна Васильева</option>
                   <option class="programs__option">Пётр Дмитриевский</option>
                 </select>
             </div>
           </div>
+          <div class="programs__bottom-block">
+            <div class="programs__picture">
+            <img src="img/micsmall.jpg" alt="Картинка микрофона" class="programs-pic" aria-label="Картинка микрофона">
+          </div>
+            <a href="#" class="programs__link link">Архив</a>
+            <p class="programs__descr">
+              В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy :)
+            </p>
+          </div>
+        </div>
+        <div class="programs__left-block">
+          <ul class="programs__list list flex">
+            <li class="programs__list-item">
+              <img src="img/graypic.png" alt="" class="programs__cards-pic">
+              <div class="programs__cards">
+                <h3 class="programs__card-title">О людях и книгах</h3>
+                <p class="programs__cards-descr">Анонсируется отдельно</p>
+                <a href="#" class="programs__cards-link link">Подробнее</a>
+              </div>
+            </li>
+            <li class="programs__list-item">
+              <img src="img/pegas.png" alt="" class="programs__cards-pic">
+              <div class="programs__cards">
+                <h3 class="programs__card-title">Графомания td.</h3>
+                <p class="programs__cards-descr">По понедельникам в 10:00 </p>
+                <a href="#" class="programs__cards-link link">Подробнее</a>
+              </div>
+            </li>
+            <li class="programs__list-item">
+              <img src="img/rome.png" alt="" class="programs__cards-pic">
+              <div class="programs__cards">
+                <h3 class="programs__card-title">Не Рим, не Троя</h3>
+                <p class="programs__cards-descr">По вторникам в 12:00</p>
+                <a href="#" class="programs__cards-link link">Подробнее</a>
+              </div>
+            </li>
+            <li class="programs__list-item">
+              <img src="img/head.png" alt="" class="programs__cards-pic">
+              <div class="programs__cards">
+                <h3 class="programs__card-title">Эрудит</h3>
+                <p class="programs__cards-descr">По пятницам в 17:00</p>
+                <a href="#" class="programs__cards-link link">Подробнее</a>
+              </div>
+            </li>
+            <li class="programs__list-item">
+              <img src="img/dog.png" alt="" class="programs__cards-pic">
+              <div class="programs__cards">
+                <h3 class="programs__card-title">Тонкости эпох</h3>
+                <p class="programs__cards-descr">По субботам в 10:00</p>
+                <a href="#" class="programs__cards-link link">Подробнее</a>
+              </div>
+            </li>
+            <li class="programs__list-item">
+              <img src="img/hedgehog.png" alt="" class="programs__cards-pic">
+              <div class="programs__cards">
+                <h3 class="programs__card-title">Живые мысли</h3>
+                <p class="programs__cards-descr">По воскресеньям в 15:30</p>
+                <a href="#" class="programs__cards-link link">Подробнее</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      </section>
-    </main>
+    </div>
+  </section>
+
+  <section class="guests">
+    <div class="container guests__container">
+      <h2 class="guests__heading heading">Гости</h2>
+      <p class="guests__guests">У нас бывают:</p>
+      <p class="guests__descr">Блогеры, арт-критики и&nbsp;деятели искусства, 
+        музыканты, молодые учёные и&nbsp;люди науки, историки, 
+        филологи и&nbsp;много других интересных гостей!</p>
+    </div>
+  </section>
+  </main>
     <script src="js/choices.min.js"></script>
     <script src="js/index.js"></script>
 </body>
