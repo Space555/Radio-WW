@@ -196,3 +196,64 @@ const choices = new Choices(element, {
   itemSelectText: '' 
   
 });
+
+//Accordion
+
+$(".guests__list").accordion({
+  heightStyle: "content",
+  collapsible: true,
+  active: false
+
+  });
+
+  window.addEventListener('DOMContentLoaded', function() {
+    //Аккордион бордер
+        document.querySelector('.guests__list-title').addEventListener('click', function() {
+            document.querySelector('.guests__list-item').classList.toggle('is-open')
+          })
+
+          document.querySelector('.arthead').addEventListener('click', function() {
+            document.querySelector('.art').classList.toggle('is-open')
+          })
+
+          document.querySelector('.artisthead').addEventListener('click', function() {
+            document.querySelector('.artist').classList.toggle('is-open')
+          })
+
+          document.querySelector('.sciencehead').addEventListener('click', function() {
+            document.querySelector('.science').classList.toggle('is-open')
+          })
+
+          document.querySelector('.historyhead').addEventListener('click', function() {
+            document.querySelector('.history').classList.toggle('is-open')
+          })
+
+          document.querySelector('.philosophyhead').addEventListener('click', function() {
+            document.querySelector('.philosophy').classList.toggle('is-open')
+          })
+        })
+
+        // Tabs
+
+document.querySelectorAll('.guests__button').forEach(function(tabsBtn) {
+
+  tabsBtn.addEventListener('click', function(e) {
+
+    const path = e.currentTarget.dataset.path;
+
+     document.querySelectorAll('.guests__button').forEach(function(btn) {
+
+      btn.classList.remove('push')});
+
+        e.currentTarget.classList.add('push');
+
+          document.querySelectorAll('.guests__tabs-block').forEach(function(tabsBtn) {
+
+            tabsBtn.classList.remove('push-active')
+
+          });
+
+                document.querySelector(`[data-target="${path}"]`).classList.add('push-active');
+  });
+
+});
