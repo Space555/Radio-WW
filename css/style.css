@@ -638,7 +638,7 @@ body {
 
 .like.active-like {
   fill: var(--color-active);
-  background-color: none;
+  background-color: transparent;
 }
 
 .podcast__like:hover {
@@ -1605,6 +1605,7 @@ path {
 
 .we__form-btn:active {
   background-color: var(--color-active);
+  transform: translateY(3px);
 }
 
 .we__checkbox {
